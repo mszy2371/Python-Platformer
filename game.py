@@ -73,8 +73,8 @@ class Player(pygame.sprite.Sprite):
         self.hit = False
         self.hit_count = 0
         self.score = 0
-        self.lives = 1
-        self.level = 6
+        self.lives = 3
+        self.level = 1
 
 
     def jump(self):
@@ -472,7 +472,7 @@ def main(window):
     scroll_area_width = 200
 
     last_safe_position = player.rect.left
-    player.score = 46500
+    player.score = 0
     
     play_again_button = pygame.Rect(WIDTH // 2 - 100, HEIGHT // 2 + 150, 200, 50)
     quit_button = pygame.Rect(WIDTH // 2 - 100, HEIGHT // 2 + 220, 200, 50)
